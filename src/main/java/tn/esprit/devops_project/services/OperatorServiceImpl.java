@@ -21,7 +21,6 @@ public class OperatorServiceImpl implements IOperatorService {
 	public List<Operator> retrieveAllOperators() {
 		return (List<Operator>) operatorRepository.findAll();
 	}
-	system.out.println("hello world");
 	@Override
 	public Operator addOperator(Operator operator) {
 		return operatorRepository.save(operator);
