@@ -25,7 +25,6 @@ public class OperatorServiceImpl implements IOperatorService {
 	public Operator addOperator(Operator operator) {
 		return operatorRepository.save(operator);
 	}
-
 	@Override
 	public void deleteOperator(Long id) {
 		operatorRepository.deleteById(id);
